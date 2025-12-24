@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { useShapesEffect } from '../../hooks/useShapesEffect';
@@ -7,15 +7,9 @@ import GeometricBackground from './GeometricBackground';
 import PhoneIcon from './PhoneIcon';
 import BackToTopButton from './BackToTopButton';
 
-// Lazy loading للمكونات الكبيرة
-const HeroSection = lazy(() => import('./HeroSection'));
-const ContactInfoSection = lazy(() => import('./ContactInfoSection'));
-
-const SectionLoader = () => (
-  <div className="min-h-[50vh] flex items-center justify-center">
-    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
-  </div>
-);
+// استيراد عادي للمكونات
+import HeroSection from './HeroSection';
+import ContactInfoSection from './ContactInfoSection';
 
 const Contact = () => {
   const { t, language } = useLanguage();
@@ -68,14 +62,8 @@ const Contact = () => {
       <GeometricBackground />
       <PhoneIcon />
       
-      <Suspense fallback={<SectionLoader />}>
-        <HeroSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <ContactInfoSection />
-      </Suspense>
-      
+      <HeroSection />
+      <ContactInfoSection />
       <BackToTopButton />
     </>
   );

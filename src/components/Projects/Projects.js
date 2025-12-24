@@ -1,4 +1,4 @@
-import React, { lazy, Suspense, useState } from 'react';
+import React, { useState } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { usePartnersSwiper } from '../../hooks/usePartnersSwiper';
@@ -6,17 +6,11 @@ import { useShapesEffect } from '../../hooks/useShapesEffect';
 import GeometricBackground from './GeometricBackground';
 import BackToTopButton from './BackToTopButton';
 
-// Lazy loading للمكونات الكبيرة
-const HeroSection = lazy(() => import('./HeroSection'));
-const ProjectsSection = lazy(() => import('./ProjectsSection'));
-const CertificatesSection = lazy(() => import('./CertificatesSection'));
-const CTASection = lazy(() => import('./CTASection'));
-
-const SectionLoader = () => (
-  <div className="min-h-[50vh] flex items-center justify-center">
-    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
-  </div>
-);
+// استيراد عادي للمكونات
+import HeroSection from './HeroSection';
+import ProjectsSection from './ProjectsSection';
+import CertificatesSection from './CertificatesSection';
+import CTASection from './CTASection';
 
 const Projects = () => {
   const { t } = useLanguage();
@@ -40,25 +34,17 @@ const Projects = () => {
     <>
       <GeometricBackground />
       
-      <Suspense fallback={<SectionLoader />}>
-        <HeroSection />
-      </Suspense>
+      <HeroSection />
       
-      <Suspense fallback={<SectionLoader />}>
-        <ProjectsSection 
-          activeFilter={activeFilter}
-          onFilterClick={handleFilterClick}
-          onLoadMore={handleLoadMore}
-        />
-      </Suspense>
+      <ProjectsSection 
+        activeFilter={activeFilter}
+        onFilterClick={handleFilterClick}
+        onLoadMore={handleLoadMore}
+      />
       
-      <Suspense fallback={<SectionLoader />}>
-        <CertificatesSection />
-      </Suspense>
+      <CertificatesSection />
       
-      <Suspense fallback={<SectionLoader />}>
-        <CTASection />
-      </Suspense>
+      <CTASection />
       
       <BackToTopButton />
     </>

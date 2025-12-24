@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { useServicesSwiper } from '../../hooks/useServicesSwiper';
@@ -6,18 +6,12 @@ import { useScrollEffects } from '../../hooks/useScrollEffects';
 import GeometricBackground from './GeometricBackground';
 import BackToTopButton from './BackToTopButton';
 
-// Lazy loading للمكونات الكبيرة
-const HeroSection = lazy(() => import('./HeroSection'));
-const AllServicesSection = lazy(() => import('./AllServicesSection'));
-const ServiceDetailsSection = lazy(() => import('./ServiceDetailsSection'));
-const WorkProcessSection = lazy(() => import('./WorkProcessSection'));
-const CTASection = lazy(() => import('./CTASection'));
-
-const SectionLoader = () => (
-  <div className="min-h-[50vh] flex items-center justify-center">
-    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
-  </div>
-);
+// استيراد عادي للمكونات
+import HeroSection from './HeroSection';
+import AllServicesSection from './AllServicesSection';
+import ServiceDetailsSection from './ServiceDetailsSection';
+import WorkProcessSection from './WorkProcessSection';
+import CTASection from './CTASection';
 
 const Services = () => {
   const { t } = useLanguage();
@@ -31,26 +25,11 @@ const Services = () => {
     <>
       <GeometricBackground />
       
-      <Suspense fallback={<SectionLoader />}>
-        <HeroSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <AllServicesSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <ServiceDetailsSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <WorkProcessSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <CTASection />
-      </Suspense>
-      
+      <HeroSection />
+      <AllServicesSection />
+      <ServiceDetailsSection />
+      <WorkProcessSection />
+      <CTASection />
       <BackToTopButton />
     </>
   );

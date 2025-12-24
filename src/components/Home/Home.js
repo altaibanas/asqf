@@ -1,23 +1,16 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { useSwiper } from '../../hooks/useSwiper';
 import { useScrollProgress } from '../../hooks/useScrollProgress';
 import GeometricBackground from './GeometricBackground';
 
-// Lazy loading للمكونات الكبيرة
-const HeroSection = lazy(() => import('./HeroSection'));
-const AboutSection = lazy(() => import('./AboutSection'));
-const ServicesSection = lazy(() => import('./ServicesSection'));
-const ProjectsSection = lazy(() => import('./ProjectsSection'));
-const TeamSection = lazy(() => import('./TeamSection'));
-
-// Loader بسيط
-const SectionLoader = () => (
-  <div className="min-h-[50vh] flex items-center justify-center">
-    <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
-  </div>
-);
+// استيراد عادي للمكونات
+import HeroSection from './HeroSection';
+import AboutSection from './AboutSection';
+import ServicesSection from './ServicesSection';
+import ProjectsSection from './ProjectsSection';
+import TeamSection from './TeamSection';
 
 const Home = () => {
   const { t } = useLanguage();
@@ -32,28 +25,12 @@ const Home = () => {
       {/* الخلفيات الهندسية - مكون ثابت غير متغير */}
       <GeometricBackground />
       
-      {/* المكونات مع Lazy Loading */}
-      <Suspense fallback={<SectionLoader />}>
-        <HeroSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <AboutSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <ServicesSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <ProjectsSection />
-      </Suspense>
-      
-      <Suspense fallback={<SectionLoader />}>
-        <TeamSection />
-      </Suspense>
-      
-     
+      {/* المكونات بدون Lazy Loading */}
+      <HeroSection />
+      <AboutSection />
+      <ServicesSection />
+      <ProjectsSection />
+      <TeamSection />
     </>
   );
 };

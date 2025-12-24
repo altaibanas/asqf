@@ -54,14 +54,14 @@ const ServicesList = memo(() => {
     {
       title: t('buildingPermits'),
       description: t('buildingPermitsDesc'),
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'images/service1.jpeg',
       icon: 'fa-hard-hat',
       iconClipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)'
     },
     {
       title: t('constructionSupervision'),
       description: t('constructionSupervisionDesc'),
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'images/service2.jpeg',
       icon: 'fa-hard-hat',
       iconClipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)'
     }

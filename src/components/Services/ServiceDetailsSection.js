@@ -21,7 +21,7 @@ const ServiceDetailsSection = memo(() => {
       title: t('buildingLicenses'),
       description: t('buildingLicensesDesc'),
       features: t('licensesFeatures'),
-      image: 'https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'images/service1.jpeg',
       badge: t('officialService'),
       badgeIcon: 'fa-file-contract',
       buttonText: t('requestLicenses')
@@ -31,7 +31,7 @@ const ServiceDetailsSection = memo(() => {
       title: t('constructionSupervision'),
       description: t('constructionSupervisionDesc'),
       features: t('supervisionFeatures'),
-      image: 'https://images.unsplash.com/photo-1503387769-00a112127ca0?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: 'images/homeoverimages.webp',
       badge: t('fieldService'),
       badgeIcon: 'fa-hard-hat',
       buttonText: t('requestSupervision')

@@ -1,16 +1,4 @@
-/* src/globals.css */
-  :root {
-            --primary: #58595B;
-            --secondary: #808285;
-            --accent: #000000;
-            --light: #F5F9FC;
-            --dark: #1A1A1A;
-            --white: #FFFFFF;
-            --black: #000000;
-            --gold: #FFD700;
-            --silver: #C0C0C0;
-            --bronze: #CD7F32;
-        }
+
 
 * {
     margin: 0;
