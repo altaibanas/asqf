@@ -44,24 +44,27 @@ const Header = () => {
     };
   }, [isMenuOpen]);
 
-  return (
+  return (  
     <>
-      <nav id="navbar" className="navbar glass-effect py-5">
+      <nav id="navbar" className="navbar glass-effect py-1">
         <div className="container mx-auto px-6">
           <div className="flex justify-between items-center">
-            {/* الشعار */}
+            {/* الشعار مع الأيقونة */}
             <div className="flex items-center gap-4">
-              <div className="logo  w-16 h-16 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center shadow-2xl">
+              <div className="logo w-12  h-12 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center shadow-2xl">
                 <img
-                  src='images/logo1.jpeg'
-                  alt='' />
+                  src='images/logo1.webp'
+                  alt='شعار الشركة' 
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
-              <div>
-                <div className="text-3xl font-bold text-primary">{t('companyName')}</div>
-                <div className="text-sm text-gray-600">{t('companySubtitle')}</div>
+              <div className="flex flex-col">
+                
+                <div className="text-sm text-gray-600 mt-1">{t('companySubtitle')}</div>
               </div>
             </div>
             
+            {/* باقي الكود كما هو... */}
             {/* روابط التنقل لسطح المكتب */}
             <div className="hidden lg:flex items-center gap-10">
               <a href="Home" className="nav-link text-accent font-medium ">
