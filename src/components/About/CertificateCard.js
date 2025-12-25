@@ -2,18 +2,32 @@ import React, { memo } from 'react';
 
 const CertificateCard = memo(({ certificate }) => {
   return (
-    <div className="swiper-slide">
-      <div className="bg-gray-50 rounded-3xl p-10 flex items-center justify-center h-64 geometric-shadow">
-        <img 
-          src={certificate.image} 
-          alt={certificate.alt} 
-          style={{width: '8rem', height: '8rem', objectFit: 'contain'}}
-          loading="lazy"
-        />
-      </div>
-      <div className="text-center mt-6">
-        <h4 className="text-xl font-bold text-primary geometric-text">{certificate.title}</h4>
-        <p className="text-gray-600 mt-2">{certificate.description}</p>
+    <div className="h-full">
+      <div className="bg-white rounded-3xl p-8 shadow-2xl text-center card-hover h-full geometric-shadow flex flex-col items-center justify-center transform transition-transform duration-300 hover:scale-105">
+        <div className="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-2xl mb-6 geometric-frame bg-gray-100" 
+             style={{border: 'none', padding: '8px'}}>
+          <img 
+            src={certificate.image} 
+            alt={certificate.alt}
+            className="w-full h-full object-contain p-4"
+            loading="lazy"
+            style={{
+              transition: 'opacity 0.3s ease',
+            }}
+          />
+        </div>
+            {/* <div className="text-center mt-4">
+              {certificate.title && (
+                <h4 className="text-2xl font-bold text-primary geometric-text mb-2">
+                  {certificate.title}
+                </h4>
+              )}
+              {certificate.description && (
+                <p className="text-gray-600 mt-2 text-lg leading-relaxed">
+                  {certificate.description}
+                </p>
+              )}
+            </div> */}
       </div>
     </div>
   );

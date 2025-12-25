@@ -11,8 +11,20 @@ const DetailedServiceCard = memo(({ service, index, language }) => {
       data-aos-duration="1000"
       data-aos-delay={index * 200}
     >
-      {/* المحتوى - سيكون على اليسار في الإنجليزية وعلى اليمين في العربية */}
-      <div className={`lg:w-1/2 ${language === 'ar' ? 'lg:order-2' : 'lg:order-1'}`}>
+      {/* الصورة - أولاً في الترتيب العام */}
+      <div className={`lg:w-1/2 ${language === 'ar' ? 'lg:order-1' : 'lg:order-1'}`}>
+        <div className="service-image-frame mt-10  relative">
+          <img 
+            src={service.image} 
+            alt={service.title}
+            className="rounded-2xl w-full h-96 object-cover   geometric-shadow"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      
+      {/* المحتوى - ثانياً في الترتيب العام */}
+      <div className={`lg:w-1/2 ${language === 'ar' ? 'lg:order-2' : 'lg:order-2'}`}>
         <div className="mb-6">
           <span className="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium inline-flex items-center">
             <i className={`fas ${service.badgeIcon} mx-2`}></i> {service.badge}
@@ -36,22 +48,10 @@ const DetailedServiceCard = memo(({ service, index, language }) => {
           ))}
         </ul>
         
-        <a href="#contact" className="btn-geometric inline-flex items-center px-10 py-4 font-medium text-lg shadow-xl">
+        <a href="contact" className="btn-geometric inline-flex items-center px-10 py-4 mt-5   font-medium text-lg shadow-xl">
           <i className={`fas ${service.badgeIcon} mx-3`}></i> 
           {service.buttonText}
         </a>
-      </div>
-      
-      {/* الصورة - سيكون على اليمين في الإنجليزية وعلى اليسار في العربية */}
-      <div className={`lg:w-1/2 ${language === 'ar' ? 'lg:order-1' : 'lg:order-2'}`}>
-        <div className="service-image-frame relative">
-          <img 
-            src={service.image} 
-            alt={service.title}
-            className="rounded-2xl w-full h-96 object-cover geometric-shadow"
-            loading="lazy"
-          />
-        </div>
       </div>
     </div>
   );

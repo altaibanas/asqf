@@ -19,13 +19,13 @@ const ProjectCard = memo(({ project, delay }) => {
         {/* Overlay معلومات المشروع */}
         <div className="project-info-overlay">
           <div>
-            <div className="flex items-center gap-2 mb-4">
+            <div className="flex items-center gap-2 mb-1">
               <div className="w-12 h-1 bg-accent"></div>
               <span className="text-accent font-medium text-lg">{project.category}</span>
             </div>
-            <h3 className="text-white text-2xl font-bold mb-3">{project.title}</h3>
-            <p className="text-gray-300 text-lg mb-6">{project.description}</p>
-            <div className="flex flex-wrap gap-3 mb-6">
+            <h3 className="text-white text-2xl font-bold mb-1">{project.title}</h3>
+            <p className="text-gray-300 text-lg mb-1">{project.description}</p>
+            <div className="flex flex-wrap gap-3 mb-1">
               {project.tags.map((tag, index) => (
                 <span key={index} className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
                   {tag}

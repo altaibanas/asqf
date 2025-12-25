@@ -175,7 +175,7 @@ button, input, textarea, select {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     background-size: 200% 200%;
-    animation: gradientMove 3s ease infinite;
+    /* animation: gradientMove 3s ease infinite; */
 }
 
 /* ===== Buttons ===== */
@@ -485,4 +485,32 @@ button, input, textarea, select {
         width: 35px;
         height: 35px;
     }
+}
+
+/* إصلاح للحركة التلقائية */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+/* منع المتصفح من إيقاف الرسوم المتحركة */
+@media (prefers-reduced-motion: no-preference) {
+  .partners-swiper {
+    animation-play-state: running !important;
+  }
+}
+
+/* إصلاح لمشاكل الأداء */
+.partners-swiper {
+  backface-visibility: hidden;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 }

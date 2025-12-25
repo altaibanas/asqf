@@ -40,7 +40,7 @@ const HeroSection = memo(() => {
           <h1 className="text-5xl lg:text-7xl font-bold text-white mb-8 leading-tight geometric-entrance" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200" style={{fontSize: '3rem', lineHeight: '1.25', textShadow: '0 2px 10px rgba(0, 0, 0, 0.2)'}}>
             <span className="block">{t('aboutUs')}</span>
             <span className="block my-4">
-              <span className="text-gradient">{t('ourStory')}</span>
+              <span className="text-gradient-geometric">{t('ourStory')}</span>
             </span>
             <span className="block">{t('engineering')}</span>
           </h1>
@@ -50,7 +50,7 @@ const HeroSection = memo(() => {
           </p>
           
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-            <a href="#about-content" className="btn-geometric px-10 py-5 font-medium text-lg inline-flex items-center shadow-2xl">
+            <a href="#about-content" className="btn-geometric px-10 py-5 font-medium text-lg inline-flex items-center mt-2 shadow-2xl">
                {t('discoverJourney')}
             </a>
           </div>

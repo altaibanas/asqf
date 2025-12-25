@@ -897,6 +897,7 @@
         .section-title.center {
             text-align: center;
             display: block;
+             margin-bottom: 1rem;
         }
         .section-title::after {
             content: '';
@@ -1038,19 +1039,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
-        .text-gradient-geometric {
-            background: linear-gradient(45deg, var(--secondary), var(--primary), var(--accent));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-            background-size: 200% 200%;
-            animation: gradientMove 3s ease infinite;
-        }
-        @keyframes gradientMove {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
-        }
+  
         /* أزرار هندسية */
         .btn-geometric {
             background: linear-gradient(135deg, var(--secondary), var(--primary));

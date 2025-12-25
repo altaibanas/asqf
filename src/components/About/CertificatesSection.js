@@ -1,101 +1,146 @@
 import React, { memo } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import CertificateCard from './CertificateCard';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const CertificatesSection = memo(() => {
-  const { t, language } = useLanguage();
+  const { t } = useLanguage();
 
   const certificates = [
     {
-      // title: t('iso9001'),
-      // description: t('qualityManagement'),
       image: 'images/daiqa.webp',
+      title: t('isoCertificate'),
       alt: t('isoCertificate')
     },
     {
-      // title: t('modernConstruction'),
-      // description: t('strategicPartner'),
       image: 'images/tamam.webp',
+      title: t('strategicPartner'),
       alt: t('strategicPartner')
     },
     {
-      // title: t('safetyHealthCertificate'),
-      // description: t('internationalStandards'),
       image: 'images/ratl.webp',
+      title: t('safetyCertificate'),
       alt: t('safetyCertificate')
     },
     {
-        // title: t('microsoft'),
-        // description: t('technologyPartner'),
       image: 'images/sawaya.webp',
+      title: t('sawaya'),
       alt: 'sawaya'
     },
     {
-      // title: t('apple'),
-      // description: t('advancedTechPartner'),
       image: 'images/mshmsh.webp',
+      title: t('mshmsh'),
       alt: 'mshmsh'
     },
     {
-      // title: t('google'),
-      // description: t('innovationPartner'),
       image: 'images/shashaistudio.webp',
+      title: t('shashaistudio'),
       alt: 'shashaistudio'
     },
     {
-      // title: t('housingMinistry'),
-      // description: t('governmentPartner'),
       image: 'images/studiohat.webp',
+      title: t('studiohat'),
       alt: t('studiohat')
     },
     {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
       image: 'images/comeanddo.webp',
+      title: t('comeanddo'),
       alt: t('comeanddo')
     },
     {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
       image: 'images/knowliom.webp',
+      title: t('globalPartner'),
       alt: t('globalPartner')
     },
     {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
       image: 'images/yasffr.webp',
+      title: t('yasffr'),
       alt: t('yasffr')
     }
   ];
 
   return (
-    <section id="certificates" className="py-32 bg-white relative overflow-hidden geometric-section">
-      <div className="polygon-shape" style={{width: '150px', height: '150px', top: '15%', left: '5%', animationDelay: '-4s'}}></div>
-      <div className="polygon-shape" style={{width: '100px', height: '100px', bottom: '15%', right: '10%', animationDelay: '-8s'}}></div>
+    <section id="partners" className="py-32 bg-gray-50 relative overflow-hidden">
+      {/* الأشكال الهندسية العائمة */}
+      <div className="absolute top-1/4 left-5% w-36 h-36 opacity-10" 
+           style={{
+             clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+             animation: 'float 6s ease-in-out infinite',
+             animationDelay: '-4s'
+           }}>
+      </div>
+      <div className="absolute bottom-1/4 right-10% w-24 h-24 opacity-10" 
+           style={{
+             clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)',
+             background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+             animation: 'float 8s ease-in-out infinite',
+             animationDelay: '-8s'
+           }}>
+      </div>
       
-      <div className="container">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="section-title center text-5xl font-bold text-gray-900 mb-8" data-aos="fade-up" data-aos-duration="1000">
-           <span className="text-gradient-geometric"> {t('ourPartners')} </span>
+          <h2 className="section-title center text-gradient-geometric text-5xl font-bold text-gray-900 mb-8" 
+              data-aos="fade-up" 
+              data-aos-duration="1000">
+            {t('ourPartners')}
           </h2>
-          <p className="text-gray-600 text-xl leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style={{maxWidth: '48rem', marginLeft: 'auto', marginRight: 'auto'}}>
+          <p className="text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed" 
+             data-aos="fade-up" 
+             data-aos-duration="1000" 
+             data-aos-delay="200">
             {t('partnersDescription')}
           </p>
         </div>
         
-        <div className="swiper-container">
-          <div className="partners-swiper swiper pb-10 px-4" data-aos="fade-up" data-aos-duration="1000">
-            <div className="swiper-wrapper">
-              {certificates.map((cert, index) => (
-                <CertificateCard key={index} certificate={cert} />
-              ))}
-            </div>
-          </div>
+        {/* Swiper Slider للشركاء */}
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <Swiper
+            modules={[Autoplay, Pagination]}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+              el: '.partners-pagination',
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+            className="pb-20"
+          >
+            {certificates.map((certificate, index) => (
+              <SwiperSlide key={index}>
+                <CertificateCard certificate={certificate} />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <div className="partners-pagination swiper-pagination relative mt-12"></div>
         </div>
         
-        <div className="text-center mt-16">
+        {/* زر Become Our Partner */}
+      <div className="text-center mt-16">
           <a href="contact" className="btn-geometric px-14 py-5 font-medium text-xl shadow-2xl inline-flex items-center">
-            <i className={`fas fa-handshake ${language === 'ar' ? 'ml-3' : 'mr-3'} text-2xl`}></i> {t('beOurPartner')}
+            <i className={`fas fa-handshake $t{language === 'ar' ? 'ml-3' : 'mr-3'} text-2xl`}></i> {t('beOurPartner')}
           </a>
         </div>
       </div>

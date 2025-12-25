@@ -5,7 +5,7 @@ const HeroSection = memo(() => {
   const { t } = useLanguage();
 
   return (
-    <section id="hero"  className="hero  min-h-screen page-hero pt-32 pb-20 relative overflow-hidden">
+    <section id="hero"  className=" min-h-screen page-hero pt-32 pb-20 relative overflow-hidden">
       <div className="shape absolute top-1/4 left-10 w-80 h-80 rounded-full bg-gradient-to-br from-secondary/20 to-transparent blur-3xl floating"></div>
       <div className="shape absolute bottom-1/4 right-10 w-96 h-96 rounded-full bg-gradient-to-tr from-primary/30 to-transparent blur-3xl floating-slow"></div>
       
@@ -31,7 +31,7 @@ const HeroSection = memo(() => {
           <h1 className="hero-title geometric-entrance" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <span className="block">{t('engineeringCreativity')}</span>
             <span className="block my-4">
-              <span className="gradient-text">{t('embodied')}</span>
+              <span className="text-gradient-geometric">{t('embodied')}</span>
             </span>
             <span className="block">{t('inOurProjects')}</span>
           </h1>

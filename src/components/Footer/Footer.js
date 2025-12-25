@@ -35,21 +35,7 @@ const Footer = () => {
               {t('footerDescription')}
             </p>
             
-            {/* وسائل التواصل الاجتماعي */}
-            <div className={`flex ${language === 'ar' ? 'justify-end' : ''} space-x-4 mt-8 ${language === 'ar' ? 'space-x-reverse' : ''}`}>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 hover:bg-secondary transition-colors flex items-center justify-center">
-                <i className="fab fa-twitter text-xl"></i>
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 hover:bg-secondary transition-colors flex items-center justify-center">
-                <i className="fab fa-facebook-f text-xl"></i>
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 hover:bg-secondary transition-colors flex items-center justify-center">
-                <i className="fab fa-linkedin-in text-xl"></i>
-              </a>
-              <a href="#" className="w-12 h-12 rounded-full bg-white/10 hover:bg-secondary transition-colors flex items-center justify-center">
-                <i className="fab fa-instagram text-xl"></i>
-              </a>
-            </div>
+          
           </div>
           
           {/* روابط سريعة */}

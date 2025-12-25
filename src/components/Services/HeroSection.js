@@ -30,9 +30,9 @@ const HeroSection = memo(() => {
           <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight geometric-entrance" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <span className="block">{t('heroTitle1')}</span>
             <span className="block my-4">
-              <span className="text-gradient">{t('heroTitle2')}</span>
+              <span className="text-gradient-geometric">{t('heroTitle2')}</span>
             </span>
-            <span className="block">{t('heroTitle3')}</span>
+            <span className="block mb-5">{t('heroTitle3')}</span>
           </h1>
           
           <p className="text-xl text-gray-200 mb-10 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">
@@ -40,8 +40,8 @@ const HeroSection = memo(() => {
           </p>
           
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
-            <a href="#all-services" className="btn-geometric px-12 py-5 font-medium text-lg inline-flex items-center shadow-2xl">
-              <i className="fas fa-arrow-down mx-3"></i> {t('discoverServices')}
+            <a href="#all-services" className="btn-geometric px-12 py-5 mt-5  font-medium text-lg inline-flex items-center shadow-2xl">
+              <i className=" mx-3"></i> {t('discoverServices')}
             </a>
           </div>
         </div>

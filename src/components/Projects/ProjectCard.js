@@ -32,10 +32,7 @@ const ProjectCard = memo(({ project, activeFilter, language }) => {
               <span key={index} className="project-tag">{tag}</span>
             ))}
           </div>
-          <a href="#" className="project-link">
-            {t('viewDetails')}
-            <i className="fas fa-arrow-left mx-3"></i>
-          </a>
+        
         </div>
       </div>
     </div>

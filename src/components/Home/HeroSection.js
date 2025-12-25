@@ -21,12 +21,12 @@ const HeroSection = memo(() => {
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-tight geometric-entrance" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="300">
               <span className="block">{t('heroTitle1h')}</span>
               <span className="block my-4">
-                <span className="text-gradient">{t('heroTitle2h')}</span>
+                <span className="text-gradient-geometric">{t('heroTitle2h')}</span>
               </span>
-              <span className="gradient-text">{t('heroTitle3h')}</span>
+              <span className="gradient-text mb-5 ">{t('heroTitle3h')}</span>
             </h1>
             
-            <p className="text-xl text-gray-200 mb-10 max-w-2xl leading-relaxed" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
+            <p className="text-xl text-gray-200 mb-8 max-w-2xl leading-relaxed " data-aos="fade-right" data-aos-duration="1200" data-aos-delay="400">
               {t('heroDescriptionh')}
             </p>
             

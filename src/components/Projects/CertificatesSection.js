@@ -1,167 +1,120 @@
-import React, { memo } from 'react';
+import React, { memo, useEffect, useRef } from 'react';
 import { useLanguage } from '../../context/LanguageContext';
 import PartnerSlide from './PartnerSlide';
+// استيراد Swiper بشكل صحيح
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 const CertificatesSection = memo(() => {
   const { t } = useLanguage();
+  const swiperRef = useRef(null);
 
   const partners = [
-    {
-      // title: t('iso9001'),
-      // description: t('qualityManagement'),
-      image: 'images/ministry.webp',
-      alt: t('ministry')
-    },
-    {
-      // title: t('modernConstruction'),
-      // description: t('strategicPartner'),
-      image: 'images/royol.webp',
-      alt: t('royol')
-    },
-    {
-      // title: t('safetyHealthCertificate'),
-      // description: t('internationalStandards'),
-      image: 'images/diriyah.webp',
-      alt: t('diriyah')
-    },
-    {
-      // title: t('microsoft'),
-      // description: t('technologyPartner'),
-      image: 'images/ithra.webp',
-      alt: 'ithra'
-    },
-    {
-      // title: t('apple'),
-      // description: t('advancedTechPartner'),
-      image: 'images/jaxdistrict.webp',
-      alt: 'ithra'
-    },
-    {
-      // title: t('google'),
-      // description: t('innovationPartner'),
-      image: 'images/noorriyadh.webp',
-      alt: 'ithra'
-    },
-    {
-      // title: t('housingMinistry'),
-      // description: t('governmentPartner'),
-      image: 'images/box.webp',
-      alt: t('ithra')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/sor.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/museum.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/visualarts.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/athr.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/mdlbeast.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/fashioncommission.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/madinaarts.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/fenaaalawwal.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/art.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/artjameel.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/miskart.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/desert.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/kafd.webp',
-      alt: t('globalPartner')
-    },
-    {
-      // title: t('nasaEngineering'),
-      // description: t('globalPartner'),
-      image: 'images/misk.webp',
-      alt: t('globalPartner')
-    },
-  
+    { image: 'images/ministry.webp', alt: t('ministry') },
+    { image: 'images/royol.webp', alt: t('royol') },
+    { image: 'images/diriyah.webp', alt: t('diriyah') },
+    { image: 'images/ithra.webp', alt: 'ithra' },
+    { image: 'images/jaxdistrict.webp', alt: 'ithra' },
+    { image: 'images/noorriyadh.webp', alt: 'ithra' },
+    { image: 'images/box.webp', alt: t('ithra') },
+    { image: 'images/sor.webp', alt: t('globalPartner') },
+    { image: 'images/museum.webp', alt: t('globalPartner') },
+    { image: 'images/visualarts.webp', alt: t('globalPartner') },
+    { image: 'images/athr.webp', alt: t('globalPartner') },
+    { image: 'images/mdlbeast.webp', alt: t('globalPartner') },
+    { image: 'images/fashioncommission.webp', alt: t('globalPartner') },
+    { image: 'images/madinaarts.webp', alt: t('globalPartner') },
+    { image: 'images/fenaaalawwal.webp', alt: t('globalPartner') },
+    { image: 'images/art.webp', alt: t('globalPartner') },
+    { image: 'images/artjameel.webp', alt: t('globalPartner') },
+    { image: 'images/miskart.webp', alt: t('globalPartner') },
+    { image: 'images/desert.webp', alt: t('globalPartner') },
+    { image: 'images/kafd.webp', alt: t('globalPartner') },
+    { image: 'images/misk.webp', alt: t('globalPartner') },
   ];
 
   return (
-    <section id="certificates" className="partners-section">
-      <div className="shape polygon-shape" style={{width: '150px', height: '150px', top: '15%', left: '5%', animationDelay: '-4s'}}></div>
-      <div className="shape polygon-shape" style={{width: '100px', height: '100px', bottom: '15%', right: '10%', animationDelay: '-8s'}}></div>
+    <section id="certificates" className="py-32 bg-gray-50 relative overflow-hidden">
+      {/* الأشكال الهندسية العائمة */}
+      <div className="absolute top-1/4 left-5% w-36 h-36 opacity-10" 
+           style={{
+             clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
+             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+             animation: 'float 6s ease-in-out infinite',
+             animationDelay: '-4s'
+           }}>
+      </div>
+      <div className="absolute bottom-1/4 right-10% w-24 h-24 opacity-10" 
+           style={{
+             clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
+             background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+             animation: 'float 8s ease-in-out infinite',
+             animationDelay: '-8s'
+           }}>
+      </div>
       
-      <div className="container">
-        <div className="section-title center">
-          <h2 data-aos="fade-up" data-aos-duration="1000">
-            <span className="text-gradient-geometric">{t('andEngineeringCertificates')}</span>
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-20">
+          <h2 className="section-title center text-gradient-geometric text-5xl font-bold text-gray-900 mb-8" 
+              data-aos="fade-up" 
+              data-aos-duration="1000">
+            {t('andEngineeringCertificates')}
           </h2>
+          <p className="text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed" 
+             data-aos="fade-up" 
+             data-aos-duration="1000" 
+             data-aos-delay="200">
+            {t('partnersDescription')}
+          </p>
         </div>
         
-        <p className="section-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-          {t('partnersDescription')}
-        </p>
-        
-        <div className="partners-swiper swiper" data-aos="fade-up" data-aos-duration="1000">
-          <div className="swiper-wrapper">
+        {/* Swiper Slider للشركاء - الطريقة الصحيحة */}
+        <div data-aos="fade-up" data-aos-duration="1000">
+          <Swiper
+            ref={swiperRef}
+            modules={[Autoplay, Pagination, Navigation]}
+            spaceBetween={30}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+              el: '.partners-pagination',
+            }}
+            breakpoints={{
+              640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 4,
+                spaceBetween: 30,
+              },
+            }}
+            className="pb-20"
+          >
             {partners.map((partner, index) => (
-              <PartnerSlide key={index} partner={partner} />
+              <SwiperSlide key={index}>
+                <PartnerSlide partner={partner} />
+              </SwiperSlide>
             ))}
-          </div>
+          </Swiper>
+          <div className="partners-pagination swiper-pagination relative mt-12"></div>
         </div>
         
-        <div className="text-center mt-16">
-          <a href="contact" className="hero-button">
-            <i className="fas fa-handshake"></i> {t('beOurPartner')}
+       <div className="text-center mt-16">
+          <a href="contact" className="btn-geometric px-14 py-5 font-medium text-xl shadow-2xl inline-flex items-center">
+            <i className={`fas fa-handshake $t{language === 'ar' ? 'ml-3' : 'mr-3'} text-2xl`}></i> {t('beOurPartner')}
           </a>
         </div>
       </div>

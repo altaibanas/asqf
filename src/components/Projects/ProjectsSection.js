@@ -93,7 +93,7 @@ const ProjectsSection = memo(({ activeFilter, onFilterClick, onLoadMore }) => {
           </h2>
         </div>
         
-        <p className="section-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+        <p className="section-description pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           {t('projectsGalleryDescription')}
         </p>
         

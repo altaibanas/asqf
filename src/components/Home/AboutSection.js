@@ -42,38 +42,7 @@ const AboutSection = memo(() => {
                 </li>
               </ul>
               
-              <div className="mt-12" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-                <h4 className={`text-2xl font-bold mb-6 text-primary ${language === 'en' ? 'text-left' : ''}`}>
-                  {t('projectDistribution')}
-                </h4>
-                <div className="geometric-chart mb-8">
-                  <div className="chart-bar" style={{height: '80%'}} data-height="80">
-                    <div className="absolute -top-8 w-full text-center text-sm font-bold text-primary">
-                      {t('architecturalEngineering')}
-                    </div>
-                  </div>
-                  <div className="chart-bar" style={{height: '65%'}} data-height="65">
-                    <div className="absolute -top-8 w-full text-center text-sm font-bold text-primary">
-                      {t('civilEngineering')}
-                    </div>
-                  </div>
-                  <div className="chart-bar" style={{height: '50%'}} data-height="50">
-                    <div className="absolute -top-8 w-full text-center text-sm font-bold text-primary">
-                      {t('interiorDesign')}
-                    </div>
-                  </div>
-                  <div className="chart-bar" style={{height: '75%'}} data-height="75">
-                    <div className="absolute -top-8 w-full text-center text-sm font-bold text-primary">
-                      {t('engineeringSupervision')}
-                    </div>
-                  </div>
-                  <div className="chart-bar" style={{height: '60%'}} data-height="60">
-                    <div className="absolute -top-8 w-full text-center text-sm font-bold text-primary">
-                      {t('technicalConsultations')}
-                    </div>
-                  </div>
-                </div>
-              </div>
+           
             </div>
             
             <a href="services" className="btn-geometric inline-flex items-center px-12 py-5 font-medium text-xl shadow-2xl" data-aos="fade-up" data-aos-duration="1000">

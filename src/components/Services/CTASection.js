@@ -12,7 +12,7 @@ const CTASection = memo(() => {
             {t('ctaTitle')}
           </h2>
           
-          <p className="text-xl text-gray-200 mb-12 max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <p className="text-xl text-gray-200 mb-6 mt-5  max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             {t('ctaDescription')}
           </p>
           
