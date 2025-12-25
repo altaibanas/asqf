@@ -194,7 +194,7 @@ const TeamSection = memo(() => {
     <section id="team" className="py-32 bg-gray-50 relative overflow-hidden">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="section-title center text-gradient-geometric text-5xl font-bold text-gray-900 mb-8" data-aos="fade-up" data-aos-duration="1000">
+          <h2 className="section-title center text-gradient text-5xl font-bold text-gray-900 mb-8" data-aos="fade-up" data-aos-duration="1000">
             {t('teamTitle')}
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">

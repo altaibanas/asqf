@@ -84,7 +84,7 @@ const CertificatesSection = memo(() => {
       
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="section-title center text-gradient text-5xl font-bold text-gray-900 mb-8" 
+          <h2 className="section-title center text text-5xl font-bold text-gray-900 mb-8" 
               data-aos="fade-up" 
               data-aos-duration="1000">
             {t('ourPartners')}
