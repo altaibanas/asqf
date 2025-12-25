@@ -73,33 +73,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          {/* معلومات الاتصال */}
-          <div>
-            <h4 className="text-2xl font-bold mb-8">{t('contactUs')}</h4>
-            <ul className="space-y-6">
-              <li className="flex items-start">
-                <i className="fas fa-phone text-secondary text-xl mt-1 mr-4"></i>
-                <div>
-                  <div className="text-gray-300 text-lg">{t('phoneNumber')}</div>
-                  <div className="text-gray-400 text-sm">{t('phoneHours')}</div>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <i className="fas fa-envelope text-secondary text-xl mt-1 mr-4"></i>
-                <div>
-                  <div className="text-gray-300 text-lg">{t('emailAddress')}</div>
-                  <div className="text-gray-400 text-sm">{t('responseTime')}</div>
-                </div>
-              </li>
-              <li className="flex items-start">
-                <i className="fas fa-map-marker-alt text-secondary text-xl mt-1 mr-4"></i>
-                <div>
-                  <div className="text-gray-300 text-lg">{t('companyAddress')}</div>
-                  <div className="text-gray-400 text-sm">{t('workingHours')}</div>
-                </div>
-              </li>
-            </ul>
-          </div>
+        
         </div>
         
         {/* حقوق النشر */}

@@ -26,15 +26,15 @@ const VisionValues = memo(() => {
         </div>
         <ul style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-check-circle text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-check-circle text-secondary mx-3 text-xl"></i> */}
             <span>{t('missionPoint1')}</span>
           </li>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-check-circle text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-check-circle text-secondary mx-3 text-xl"></i> */}
             <span>{t('missionPoint2')}</span>
           </li>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-check-circle text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-check-circle text-secondary mx-3 text-xl"></i> */}
             <span>{t('missionPoint3')}</span>
           </li>
         </ul>
@@ -51,19 +51,19 @@ const VisionValues = memo(() => {
         </div>
         <ul style={{display: 'flex', flexDirection: 'column', gap: '1.5rem'}}>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-star  text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-star  text-secondary pb-12 m-1 mx-3 text-xl"></i> */}
             <span>{t('excellenceCreativity')}</span>
           </li>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-star text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-star text-secondary mx-3 text-xl"></i> */}
             <span>{t('integrityTransparency')}</span>
           </li>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-star text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-star text-secondary mx-3 text-xl"></i> */}
             <span>{t('teamwork')}</span>
           </li>
           <li className="flex items-center text-gray-600 text-lg">
-            <i className="fas fa-star text-secondary mx-3 text-xl"></i>
+            {/* <i className="fas fa-star text-secondary mx-3 text-xl"></i> */}
             <span>{t('commitmentTime')}</span>
           </li>
         </ul>

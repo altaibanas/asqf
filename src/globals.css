@@ -170,7 +170,7 @@ button, input, textarea, select {
 
 /* ===== Text Effects ===== */
 .text-gradient-geometric {
-    background: linear-gradient(45deg, var(--gold), var(--secondary), var(--primary));
+    background: linear-gradient(45deg, var(--light  ));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

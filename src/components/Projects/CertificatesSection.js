@@ -109,7 +109,7 @@ const CertificatesSection = memo(() => {
               </SwiperSlide>
             ))}
           </Swiper>
-          <div className="partners-pagination swiper-pagination relative mt-12"></div>
+          {/* <div className="partners-pagination swiper-pagination relative mt-12"></div> */}
         </div>
         
        <div className="text-center mt-16">
