@@ -19,9 +19,9 @@ const ProjectCard = memo(({ project, activeFilter, language }) => {
         alt={project.alt}
         loading="lazy"
       />
-      <div className="project-icon">
-        <i className={`fas ${project.icon}`}></i>
-      </div>
+      {/* <div className="project-icon ">
+        <i className={`fas ${project.icon} `}></i>
+      </div> */}
       <div className="project-overlay">
         <div className="project-content">
           <div className="project-category">{project.categoryName}</div>

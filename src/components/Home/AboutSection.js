@@ -9,7 +9,7 @@ const AboutSection = memo(() => {
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
           <h2 className="section-title center text-5xl font-bold text-gray-900 mb-8" data-aos="fade-up" data-aos-duration="1000">
-            {t('aboutTitle')} <span className="text-gradient-geometric">{language === 'ar' ? 'الهندسية' : 'Engineering'}</span>
+            {t('aboutTitle')} <span className="section-title center text-5xl font-bold text-gray-900 mb-8">{language === 'ar' ? 'الهندسية' : 'Engineering'}</span>
           </h2>
           <p className="text-gray-600 max-w-3xl mx-auto text-xl leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             {t('aboutDescription')}

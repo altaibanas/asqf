@@ -13,7 +13,7 @@ const CTASection = memo(() => {
         <h2 className="text-5xl font-bold mb-8 text-white " data-aos="fade-up" data-aos-duration="1000">
           {t('readyStartProject')}
         </h2>
-        <p className="text-xl text-gray-200 mb-10 leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style={{maxWidth: '48rem', marginLeft: 'auto', marginRight: 'auto'}}>
+        <p className="text-xl text-gray-200 mb-10 mt-5 leading-relaxed" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200" style={{maxWidth: '48rem', marginLeft: 'auto', marginRight: 'auto'}}>
           {t('ctaDescription')}
         </p>
         <div style={{display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '1.5rem'}} data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">

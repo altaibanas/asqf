@@ -42,7 +42,7 @@ const HeroSection = memo(() => {
           
           <div data-aos="fade-up" data-aos-duration="1200" data-aos-delay="500">
             <a href="#projects-content" className="hero-button">
-              <i className="fas fa-arrow-down"></i> {t('browseOurProjects')}
+             {t('browseOurProjects')}
             </a>
           </div>
         </div>

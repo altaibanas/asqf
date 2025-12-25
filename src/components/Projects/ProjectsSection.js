@@ -103,7 +103,7 @@ const ProjectsSection = memo(({ activeFilter, onFilterClick, onLoadMore }) => {
           language={language}
         />
         
-        <div className="projects-grid" id="projects-grid">
+        <div className="projects-grid mb-10" id="projects-grid">
           {projects.map((project) => (
             <ProjectCard 
               key={project.id}

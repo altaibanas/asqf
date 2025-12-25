@@ -111,7 +111,7 @@ const TeamSection = memo(() => {
       ]
     },
     {
-      name: language === 'ar' ? 'فرح حاتم' : 'farah Hatem',
+      name: language === 'ar' ? 'فرح حاتم' : 'Farah Hatem',
       title: t('Farahtitle'),
       description: t('FarahDesc'),
       image: 'images/farah.webp',
