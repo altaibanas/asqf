@@ -50,16 +50,10 @@ const ContactInfoSection = memo(() => {
   };
 
   return (
-    <section id="contact-info" className="py-20 md:py-32 bg-white relative overflow-hidden geometric-section" dir={language === 'ar' ? 'rtl' : 'ltr'}>
-      <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
-        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-          <path fill="currentColor" d="M45.7,-45.7C58.2,-33.2,67.2,-16.6,66.6,-0.6C66,15.4,55.9,30.8,43.4,43.4C30.8,55.9,15.4,66.6,0.3,66.3C-14.8,66,-29.6,55.6,-43.4,43.4C-57.1,31.1,-69.7,17,-71.2,0.9C-72.7,-15.2,-63,-30.3,-49.3,-42.7C-35.5,-55.1,-17.8,-64.7,-0.6,-64.1C16.6,-63.5,33.2,-58.2,45.7,-45.7Z" transform="translate(100 100)" />
-        </svg>
-      </div>
+    <section id="contact-info" className="py-20 md:py-32 bg-white relative overflow-hidden" dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    
       
-      <div className="polygon-shape" style={{width: '120px', height: '120px', top: '15%', right: '5%', animationDelay: '-3s'}}></div>
-      <div className="polygon-shape" style={{width: '100px', height: '100px', bottom: '20%', left: '10%', animationDelay: '-8s'}}></div>
-      
+     
       <div className="container relative z-10">
         <div className="text-center mb-12 md:mb-20">
           <h2 className="section-title center text-3xl md:text-5xl font-bold text-gray-900 mb-6 md:mb-8" data-aos="fade-up" data-aos-duration="1000">
@@ -86,7 +80,7 @@ const ContactInfoSection = memo(() => {
         </div>
         
         {/* Map Section */}
-        <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl mb-12 md:mb-20 geometric-frame" data-aos="fade-up" data-aos-duration="1000">
+        <div className=" overflow-hidden  mb-12 md:mb-20" data-aos="fade-up" data-aos-duration="1000">
           <div className="h-64 md:h-96 w-full bg-gradient-to-br from-gray-100 to-gray-200 relative">
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center relative px-4">
@@ -102,7 +96,7 @@ const ContactInfoSection = memo(() => {
                   href="https://maps.google.com/?q=الرياض الدرعية حي الجاكس" 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className={`btn-geometric px-6 py-3 md:px-10 md:py-5 font-medium text-base md:text-lg inline-flex items-center mt-4 md:mt-8 ${language === 'ar' ? 'flex-row-reverse' : ''}`}
+                  className={` px-6 py-3 md:px-10 md:py-5 font-medium text-base md:text-lg inline-flex items-center mt-4 md:mt-8 ${language === 'ar' ? 'flex-row-reverse' : ''}`}
                 >
                   <i className="fas fa-external-link-alt mx-3 text-lg md:text-xl"></i> 
                   {t('openGoogleMaps')}

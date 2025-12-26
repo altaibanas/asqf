@@ -9,9 +9,9 @@ const ProcessStep = memo(({ step, index }) => {
       data-aos-delay={index * 200}
     >
       <div className="step-number relative mb-8">
-        <span className="text-8xl font-bold text-gray-200 opacity-50">{step.id}</span>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-          <i className={`fas ${step.icon} text-white text-2xl`}></i>
+        {/* <span className="text-8xl font-bold text-gray-200 opacity-50">{step.id}</span> */}
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 bg-gradient-to-br  flex items-center justify-center">
+          <i className={`fas ${step.icon}  text-2xl`}></i>
         </div>
       </div>
       

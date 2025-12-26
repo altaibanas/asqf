@@ -96,12 +96,7 @@ const ProjectsSection = memo(({ activeFilter, onFilterClick, onLoadMore }) => {
         <p className="section-description pb-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           {t('projectsGalleryDescription')}
         </p>
-        
-        <FilterButtons 
-          activeFilter={activeFilter}
-          onFilterClick={onFilterClick}
-          language={language}
-        />
+       
         
         <div className="projects-grid mb-10" id="projects-grid">
           {projects.map((project) => (
@@ -114,11 +109,7 @@ const ProjectsSection = memo(({ activeFilter, onFilterClick, onLoadMore }) => {
           ))}
         </div>
         
-        <div className="text-center">
-          <button id="loadMoreProjects" className="hero-button" onClick={onLoadMore}>
-            <i className="fas fa-sync-alt mx-2"></i> {t('loadMoreProjects')}
-          </button>
-        </div>
+      
       </div>
     </section>
   );

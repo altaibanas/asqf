@@ -20,7 +20,7 @@ const ServicesSection = memo(() => {
         <ServicesList />
         
         <div className="text-center">
-          <a href="services" className="btn-geometric px-14 py-5 font-medium text-xl shadow-2xl inline-flex items-center">
+          <a href="services" className="  py-5 font-medium text-xl  inline-flex items-center">
             <i className={`fas fa-list ${language === 'ar' ? 'ml-3' : 'mr-3'} text-2xl`}></i> {t('viewAllServices')}
           </a>
         </div>

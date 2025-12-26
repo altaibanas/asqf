@@ -5,23 +5,21 @@ const CTASection = memo(() => {
   const { t, language } = useLanguage();
 
   return (
-    <section id="cta" className="py-32 hero-gradient relative overflow-hidden" dir={language === 'ar' ? 'rtl' : 'ltr'}>
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="text-center">
-          <h2 className="text-5xl font-bold text-white mb-8" data-aos="fade-up" data-aos-duration="1000">
-            {t('ctaTitle')}
+    <section id="cta" className="cta-section">
+      <div className="shape polygon-shape" style={{width: '120px', height: '120px', top: '20%', right: '10%', animationDelay: '-3s', opacity: '0.2'}}></div>
+      <div className="shape polygon-shape" style={{width: '100px', height: '100px', bottom: '20%', left: '15%', animationDelay: '-6s', opacity: '0.2'}}></div>
+      
+      <div className="container">
+        <div className="cta-content">
+          <h2 className="cta-title text-gradient-geometric " data-aos="fade-up" data-aos-duration="1000">
+            {t('haveDistinguishedProject')}
           </h2>
-          
-          <p className="text-xl text-gray-200 mb-6 mt-5  max-w-3xl mx-auto" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <p className="cta-description text-gradient-geometric" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             {t('ctaDescription')}
           </p>
-          
-          <div className="flex flex-wrap justify-center gap-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <a href="/contact" className="btn-geometric px-12 py-5 font-medium text-lg inline-flex items-center shadow-2xl">
-              <i className="fas fa-paper-plane mx-3"></i> {t('contactUs')}
-            </a>
-            <a href="/projects" className="btn-secondary px-12 py-5 rounded-2xl font-medium text-lg border-2 border-accent inline-flex items-center shadow-2xl">
-              <i className="fas fa-project-diagram mx-3"></i> {t('viewProjects')}
+          <div className="cta-buttons  text-black " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a href="contact" className=" px-14 py-5 font-medium text-xl bg- inline-flex items-center">
+              <i className="fas fa-paper-plane"></i> {t('discussYourProject')}
             </a>
           </div>
         </div>

@@ -17,7 +17,7 @@ const DetailedServiceCard = memo(({ service, index, language }) => {
           <img 
             src={service.image} 
             alt={service.title}
-            className="rounded-2xl w-full h-96 object-cover   geometric-shadow"
+            className=" w-full h-96 object-cover  "
             loading="lazy"
           />
         </div>
@@ -26,7 +26,7 @@ const DetailedServiceCard = memo(({ service, index, language }) => {
       {/* المحتوى - ثانياً في الترتيب العام */}
       <div className={`lg:w-1/2 ${language === 'ar' ? 'lg:order-2' : 'lg:order-2'}`}>
         <div className="mb-6">
-          <span className="px-4 py-2 bg-secondary/10 text-secondary rounded-full text-sm font-medium inline-flex items-center">
+          <span className="px-4 py-2 bg-secondary/10 text-secondary  text-sm font-medium inline-flex items-center">
             <i className={`fas ${service.badgeIcon} mx-2`}></i> {service.badge}
           </span>
         </div>
@@ -48,10 +48,7 @@ const DetailedServiceCard = memo(({ service, index, language }) => {
           ))}
         </ul>
         
-        <a href="contact" className="btn-geometric inline-flex items-center px-10 py-4 mt-5   font-medium text-lg shadow-xl">
-          <i className={`fas ${service.badgeIcon} mx-3`}></i> 
-          {service.buttonText}
-        </a>
+      
       </div>
     </div>
   );

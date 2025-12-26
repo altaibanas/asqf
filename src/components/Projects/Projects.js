@@ -3,7 +3,6 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { usePartnersSwiper } from '../../hooks/usePartnersSwiper';
 import { useShapesEffect } from '../../hooks/useShapesEffect';
-import GeometricBackground from './GeometricBackground';
 import BackToTopButton from './BackToTopButton';
 
 // استيراد عادي للمكونات
@@ -32,7 +31,7 @@ const Projects = () => {
 
   return (
     <>
-      <GeometricBackground />
+      {/* <GeometricBackground /> */}
       
       <HeroSection />
       

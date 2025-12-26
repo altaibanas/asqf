@@ -42,7 +42,7 @@ const AllServicesSection = memo(() => {
   ];
 
   return (
-    <section id="all-services" className="py-32 bg-gray-50 relative overflow-hidden service-bg-pattern" dir={language === 'ar' ? 'rtl' : 'ltr'}>
+    <section id="all-services" className="py-32 bg-gray-50 relative overflow-hidden" dir={language === 'ar' ? 'rtl' : 'ltr'}>
       <div className="container mx-auto px-6 relative z-10">
           <div className="text-center mb-20">
           <h2 className="section-title center text-5xl font-bold text-gray-900 mb-8" data-aos="fade-up" data-aos-duration="1000">

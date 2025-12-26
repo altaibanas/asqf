@@ -5,7 +5,7 @@ const ServiceCard = memo(({ service, index }) => {
   const { t, language } = useLanguage();
   
   return (
-    <div className="card-hover card-geometric bg-white rounded-3xl overflow-hidden geometric-shadow" 
+    <div className=" bg-white  overflow-hidden " 
          data-aos="fade-up" 
          data-aos-duration="1000" 
          data-aos-delay={index * 200}>
@@ -17,16 +17,16 @@ const ServiceCard = memo(({ service, index }) => {
           loading="lazy"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 transition-opacity duration-700 hover:opacity-100"></div>
-        <div className="absolute top-6 left-6 w-16 h-16 bg-white rounded-2xl flex items-center justify-center" 
+        {/* <div className="absolute top-6 left-6 w-16 h-16 bg-white  flex items-center justify-center" 
              style={{clipPath: service.iconClipPath}}>
           <i className={`fas ${service.icon} text-secondary text-2xl`}></i>
-        </div>
+        </div> */}
       </div>
       <div className="p-10 relative z-10">
-        <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center mb-8 shadow-xl" 
+        {/* <div className="w-20 h-20  bg-gradient-to-br  flex items-center justify-center mb-8 " 
              style={{clipPath: service.iconClipPath}}>
           <i className={`fas ${service.icon} text-white text-3xl`}></i>
-        </div>
+        </div> */}
         <h3 className="text-3xl font-bold mb-6 text-primary geometric-text">
           {service.title}
         </h3>

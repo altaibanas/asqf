@@ -11,18 +11,15 @@ const CTASection = memo(() => {
       
       <div className="container">
         <div className="cta-content">
-          <h2 className="cta-title" data-aos="fade-up" data-aos-duration="1000">
+          <h2 className="cta-title text-gradient-geometric " data-aos="fade-up" data-aos-duration="1000">
             {t('haveDistinguishedProject')}
           </h2>
-          <p className="cta-description" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          <p className="cta-description text-gradient-geometric" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
             {t('ctaDescription')}
           </p>
-          <div className="cta-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            <a href="contact" className="cta-button primary">
+          <div className="cta-buttons  text-black " data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            <a href="contact" className=" px-14 py-5 font-medium text-xl bg- inline-flex items-center">
               <i className="fas fa-paper-plane"></i> {t('discussYourProject')}
-            </a>
-            <a href="services" className="cta-button secondary">
-              <i className="fas fa-cogs"></i> {t('browseOurServices')}
             </a>
           </div>
         </div>

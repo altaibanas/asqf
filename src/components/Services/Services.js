@@ -3,7 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { useServicesSwiper } from '../../hooks/useServicesSwiper';
 import { useScrollEffects } from '../../hooks/useScrollEffects';
-import GeometricBackground from './GeometricBackground';
+// import GeometricBackground from './GeometricBackground';
 import BackToTopButton from './BackToTopButton';
 
 // استيراد عادي للمكونات
@@ -23,7 +23,7 @@ const Services = () => {
 
   return (
     <>
-      <GeometricBackground />
+      {/* <GeometricBackground /> */}
       
       <HeroSection />
       <AllServicesSection />

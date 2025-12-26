@@ -5,7 +5,7 @@ const AboutSection = memo(() => {
   const { t, language } = useLanguage();
 
   return (
-    <section id="about" className="py-32 bg-white relative overflow-hidden geometric-section">
+    <section id="about" className="py-32 bg-white relative overflow-hidden">
       <div className="container mx-auto px-6 relative z-10">
         <div className="text-center">
           <h2 className="section-title center text-5xl font-bold text-gray-900 mb-8" data-aos="fade-up" data-aos-duration="1000">
@@ -27,7 +27,7 @@ const AboutSection = memo(() => {
                 {t('visionDescription')}
               </p>
               
-              <ul className={`geometric-list space-y-6 mb-10 ${language === 'en' ? 'text-left' : ''}`}>
+              <ul className={` space-y-6 mb-10 ${language === 'en' ? 'text-left' : ''}`}>
                 <li className="text-gray-700 text-lg" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
                   <span className="font-bold text-primary">{t('leadership')}:</span> {t('leadershipDesc')}
                 </li>
@@ -45,10 +45,7 @@ const AboutSection = memo(() => {
            
             </div>
             
-            <a href="services" className="btn-geometric inline-flex items-center px-12 py-5 font-medium text-xl shadow-2xl" data-aos="fade-up" data-aos-duration="1000">
-              {t('discoverServices')}
-              <i className={`fas fa-arrow-left ${language === 'ar' ? 'mr-3' : 'ml-3 rotate-180'} text-xl`}></i>
-            </a>
+          
           </div>
           
           <div className="lg:w-1/2">
@@ -74,16 +71,7 @@ const AboutSection = memo(() => {
               </div>
             </div>
             
-            <div className="mt-16 flex justify-center">
-              <div className="cube" style={{width: '80px', height: '80px'}}>
-                <div className="cube-face front"><i className="fas fa-cube text-sm"></i></div>
-                <div className="cube-face back"><i className="fas fa-drafting-compass text-sm"></i></div>
-                <div className="cube-face right"><i className="fas fa-ruler-combined text-sm"></i></div>
-                <div className="cube-face left"><i className="fas fa-shapes text-sm"></i></div>
-                <div className="cube-face top"><i className="fas fa-cube text-sm"></i></div>
-                <div className="cube-face bottom"><i className="fas fa-cube text-sm"></i></div>
-              </div>
-            </div>
+          
           </div>
         </div>
       </div>

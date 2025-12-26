@@ -38,23 +38,8 @@ const CertificatesSection = memo(() => {
 
   return (
     <section id="certificates" className="py-32 bg-gray-50 relative overflow-hidden">
-      {/* الأشكال الهندسية العائمة */}
-      <div className="absolute top-1/4 left-5% w-36 h-36 opacity-10" 
-           style={{
-             clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)',
-             background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
-             animation: 'float 6s ease-in-out infinite',
-             animationDelay: '-4s'
-           }}>
-      </div>
-      <div className="absolute bottom-1/4 right-10% w-24 h-24 opacity-10" 
-           style={{
-             clipPath: 'polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%)',
-             background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
-             animation: 'float 8s ease-in-out infinite',
-             animationDelay: '-8s'
-           }}>
-      </div>
+     
+      
       
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
@@ -113,7 +98,7 @@ const CertificatesSection = memo(() => {
         </div>
         
        <div className="text-center mt-16">
-          <a href="contact" className="btn-geometric px-14 py-5 font-medium text-xl shadow-2xl inline-flex items-center">
+          <a href="contact" className=" px-14 py-5 font-medium text-xl shadow-2xl inline-flex items-center">
             <i className={`fas fa-handshake $t{language === 'ar' ? 'ml-3' : 'mr-3'} text-2xl`}></i> {t('beOurPartner')}
           </a>
         </div>

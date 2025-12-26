@@ -16,7 +16,7 @@ const VisionValues = memo(() => {
   return (
     <div id="vision" className="grid grid-cols-1 md:grid-cols-2 gap-16 mb-32">
       {/* رسالتنا */}
-      <div className="rounded-3xl p-12 geometric-shadow" data-aos="fade-right" data-aos-duration="1000" style={{background: 'linear-gradient(to bottom right, rgba(88, 89, 91, 0.05), rgba(128, 130, 133, 0.05))'}}>
+      <div className=" p-12 " data-aos="fade-right" data-aos-duration="1000" style={{background: 'linear-gradient(to bottom right, rgba(88, 89, 91, 0.05), rgba(128, 130, 133, 0.05))'}}>
         <div className="w-24 h-24 rounded-2xl flex items-center justify-center mb-10" style={{background: 'linear-gradient(to bottom right, var(--secondary), var(--primary))', clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
           <i className="fas fa-bullhorn text-white text-3xl"></i>
         </div>
@@ -41,7 +41,7 @@ const VisionValues = memo(() => {
       </div>
       
       {/* قيمنا */}
-      <div className="rounded-3xl p-12 geometric-shadow" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" style={{background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 0.05), rgba(128, 130, 133, 0.05))'}}>
+      <div className=" p-12 " data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200" style={{background: 'linear-gradient(to bottom right, rgba(0, 0, 0, 0.05), rgba(128, 130, 133, 0.05))'}}>
         <div className="w-24 h-24 rounded-2xl flex items-center justify-center mb-10" style={{background: 'linear-gradient(to bottom right, var(--accent), var(--secondary))', clipPath: 'polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)'}}>
           <i className="fas fa-gem text-white text-3xl"></i>
         </div>

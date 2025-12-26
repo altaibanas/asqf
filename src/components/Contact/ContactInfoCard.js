@@ -12,8 +12,8 @@ const ContactInfoCard = memo(({ card }) => {
   };
 
   return (
-    <div className="card-hover card-geometric bg-white rounded-2xl md:rounded-3xl p-6 md:p-10 text-center geometric-shadow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={card.delay}>
-      <div className={`w-16 h-16 md:w-24 md:h-24 rounded-2xl bg-gradient-to-br ${card.gradient} flex items-center justify-center mx-auto mb-6 md:mb-8`} style={{clipPath: card.shape, padding: '8px'}}>
+    <div className="  bg-white   p-6 md:p-10 text-center " data-aos="fade-up" data-aos-duration="1000" data-aos-delay={card.delay}>
+      <div className={`w-16 h-16 md:w-24 md:h-24  bg-gradient-to-br ${card.gradient} flex items-center justify-center mx-auto mb-6 md:mb-8`} style={{clipPath: card.shape, padding: '8px'}}>
         <i className={`fas ${card.icon} text-white text-lg md:text-2xl`}></i>
       </div>
       <h3 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-primary geometric-text">{card.title}</h3>

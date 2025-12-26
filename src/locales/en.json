@@ -96,8 +96,8 @@
   
   "teamTitle": "Creative Engineering Minds",
   
-  "mahmoudTitle": "Co-Founder / Chief Financial Officer",
-  "mahmoudDesc": "Has extensive experience in financial management of engineering projects and leads our team towards excellence and success.",
+  "mahmoudTitle": "Co-Founder/CEO",
+  "mahmoudDesc": "Has extensive experience in  management of engineering projects and leads our team towards excellence and success.",
   
   "haithamTitle": "Head of Design and Planning Department",
   "haithamDesc": "A creative architectural engineer with extensive experience in integrated architectural and engineering design.",
@@ -162,8 +162,6 @@
     "engineeringLeadership": "Engineering Team",
     "leadershipDescription": "Creative minds leading the journey of engineering success and excellence",
     "mahmoudName": "Mahmoud Al-Rubai'i",
-    "mahmoudTitle": "Co-Founder / CEO",
-    "mahmoudDesc": "Has extensive experience in financial management of engineering projects, and leads our team towards excellence and success.",
     "engineeringManagement": "Engineering Management",
     "mahmoudSkill1": "95%",
     "haithamName": "Haitham Al-Azzi",
@@ -172,7 +170,6 @@
     "architecturalDesign": "Architectural Design",
     "haithamSkill1": "98%",
     "idrisName": "Idris Ahmed",
-    "idrisTitle": "Project Manager",
     "idrisDesc": "Has extensive experience in managing complex engineering projects and ensuring their implementation according to the highest quality standards.",
     "projectManagement": "Project Management",
     "idrisSkill1": "92%",
@@ -435,7 +432,7 @@
   "messageSentSuccess": "Your message has been sent successfully! We will contact you soon.",
   "Farahtitle":"Project Coordinator",
   "FarahDesc":"A professional specialized in project coordination and management. Their main role is planning, monitoring ",
-   "Aymandesc":"A specialized professional combining advanced architectural engineering skills with on-site managerial experience. His mission is to design and execute projects by managing all stages of construction, from engineering design to on-site implementation. ",
+   "Aymandesc":"A specialized professional combining advanced architectural engineering skills with on-site managerial experience.",
   "Aymantitle":"Architect & Site Manager",
 
    "Mohamedtitle":"Production Manager",
@@ -485,7 +482,6 @@
   "haithamDesc": "A creative architect with extensive experience in integrated architectural and engineering design.",
   "architecturalDesign": "Architectural Design",
   "idrisAhmed": "Idris Ahmed",
-  "idrisTitle": "Project Manager",
   "idrisDesc": "Has extensive experience in managing complex engineering projects and ensuring their implementation according to the highest quality standards.",
   "projectManagement": "Project Management",
   "lujainKhalid": "Lujain Khalid",
@@ -530,8 +526,8 @@
   "workingHours": "Sunday - Thursday: 8 AM - 5 PM",
   "privacyPolicy": "Privacy Policy",
   "termsOfService": "Terms of Service",
-   "Ayatitle":"Aya Ayman",
-  "Ayadesc":"It acts as a link between the engineering company and the outside world, ensuring the smooth flow of information and resources, which contributes to the continuity of projects without administrative or logistical obstacles.",
+   "Ayatitle":"Interior designer",
+  "Ayadesc":"It acts as a link between the engineering company and the outside world, ensuring the smooth flow of information and resources.",
   "faq": "FAQ"
 
   

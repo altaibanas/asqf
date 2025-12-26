@@ -6,14 +6,12 @@ const ServiceCard = memo(({ service, index, language }) => {
 
   return (
     <div 
-      className="service-card bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2"
+      className="service-card bg-white  p-8  transition-all duration-300 "
       data-aos="fade-up" 
       data-aos-duration="1000" 
       data-aos-delay={index * 200}
     >
-      <div className={`service-icon ${service.shape} mb-6`}>
-        <i className={`fas ${service.icon} text-white text-2xl`}></i>
-      </div>
+     
       
       <h3 className="text-2xl font-bold mb-4 text-primary geometric-text">
         {service.title}
@@ -32,10 +30,7 @@ const ServiceCard = memo(({ service, index, language }) => {
         ))}
       </ul>
       
-      {/* <a href="#contact" className="text-secondary font-medium hover:text-primary transition-colors inline-flex items-center text-lg geometric-text">
-        {t('requestService')}
-        <i className="fas fa-arrow-left mx-3"></i>
-      </a> */}
+   
     </div>
   );
 });

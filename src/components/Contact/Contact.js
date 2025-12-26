@@ -3,7 +3,6 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { useShapesEffect } from '../../hooks/useShapesEffect';
 import { useMobileEnhancements } from '../../hooks/useMobileEnhancements';
-import GeometricBackground from './GeometricBackground';
 import PhoneIcon from './PhoneIcon';
 import BackToTopButton from './BackToTopButton';
 
@@ -59,7 +58,7 @@ const Contact = () => {
 
   return (
     <>
-      <GeometricBackground />
+      {/* <GeometricBackground /> */}
       <PhoneIcon />
       
       <HeroSection />

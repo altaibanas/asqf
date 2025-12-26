@@ -3,7 +3,7 @@ import { useLanguage } from '../../context/LanguageContext';
 import { useAOS } from '../../hooks/useAOS';
 import { useSwiper } from '../../hooks/useSwiper';
 import { useScrollProgress } from '../../hooks/useScrollProgress';
-import GeometricBackground from './GeometricBackground';
+
 
 // استيراد عادي للمكونات
 import HeroSection from './HeroSection';
@@ -23,7 +23,7 @@ const Home = () => {
   return (
     <>
       {/* الخلفيات الهندسية - مكون ثابت غير متغير */}
-      <GeometricBackground />
+      {/* <GeometricBackground /> */}
       
       {/* المكونات بدون Lazy Loading */}
       <HeroSection />

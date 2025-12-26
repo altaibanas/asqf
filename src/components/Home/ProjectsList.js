@@ -6,7 +6,7 @@ const ProjectCard = memo(({ project, delay }) => {
 
   return (
     <div className="project-card-wrapper group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={delay}>
-      <div className="project-card geometric-shadow cursor-pointer overflow-hidden">
+      <div className="project-card  cursor-pointer overflow-hidden">
         {/* طبقة الصورة */}
         <div className="project-image-layer">
           <img 
@@ -27,7 +27,7 @@ const ProjectCard = memo(({ project, delay }) => {
             <p className="text-gray-300 text-lg mb-1">{project.description}</p>
             <div className="flex flex-wrap gap-3 mb-1">
               {project.tags.map((tag, index) => (
-                <span key={index} className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white text-sm">
+                <span key={index} className="px-4 py-2 bg-white/10 backdrop-blur-sm  text-white text-sm">
                   {tag}
                 </span>
               ))}
@@ -38,10 +38,10 @@ const ProjectCard = memo(({ project, delay }) => {
         {/* المعلومات الأساسية الظاهرة دائماً */}
         <div className="absolute top-6 left-6 z-30">
           <div className="flex flex-col gap-2">
-            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm rounded-lg flex items-center justify-center" style={{clipPath: project.iconClipPath}}>
+            <div className="w-16 h-16 bg-white/20 backdrop-blur-sm  flex items-center justify-center" style={{clipPath: project.iconClipPath}}>
               <i className={`fas ${project.icon} text-white text-2xl`}></i>
             </div>
-            <div className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg">
+            <div className="px-4 py-2 bg-white/10 backdrop-blur-sm">
               <span className="text-white font-medium">
                 {project.projectName}
               </span>
@@ -58,7 +58,7 @@ ProjectCard.displayName = 'ProjectCard';
 const AdditionalProjectCard = memo(({ project, delay }) => {
   return (
     <div className="project-card-wrapper group" data-aos="fade-up" data-aos-duration="1000" data-aos-delay={delay}>
-      <div className="project-card h-96 geometric-shadow cursor-pointer overflow-hidden">
+      <div className="project-card h-96  cursor-pointer overflow-hidden">
         <div className="project-image-layer">
           <img 
             src={project.image} 
@@ -80,10 +80,10 @@ const AdditionalProjectCard = memo(({ project, delay }) => {
         
         <div className="absolute top-6 left-6 z-30">
           <div className="flex flex-col gap-2">
-            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm rounded flex items-center justify-center" style={{clipPath: project.iconClipPath}}>
+            <div className="w-12 h-12 bg-white/20 backdrop-blur-sm  flex items-center justify-center" style={{clipPath: project.iconClipPath}}>
               <i className={`fas ${project.icon} text-white text-lg`}></i>
             </div>
-            <div className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-lg">
+            <div className="px-4 py-2 bg-white/10 backdrop-blur-sm ">
               <span className="text-white font-medium">{project.projectName}</span>
             </div>
           </div>

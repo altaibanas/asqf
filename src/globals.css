@@ -40,7 +40,7 @@ html {
 }
 
 body {
-    font-family: 'Tajawal', sans-serif;
+    font-family: 'Montserrat', sans-serif;  
     overflow-x: hidden;
     background-color: var(--white);
     color: var(--black);
@@ -170,7 +170,7 @@ button, input, textarea, select {
 
 /* ===== Text Effects ===== */
 .text-gradient-geometric {
-    background: linear-gradient(45deg, var(--light  ));
+    background: linear-gradient(45deg, var(--primary      ));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

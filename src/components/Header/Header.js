@@ -78,14 +78,14 @@ const Header = () => {
               <Link to="/projects" className="nav-link text-accent font-medium inline-flex items-center">
                 <i className="fas fa-project-diagram mx-2"></i> {t('projects')}
               </Link>
-              <Link to="/contact" className={`btn-geometric px-10 py-4 font-medium shadow-lg inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
+              <Link to="/contact" className={` px-10 py-4 font-medium shadow-lg inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}>
                 <i className="fas fa-paper-plane mx-2"></i> {t('contact')}
               </Link>
               
               {/* زر تبديل اللغة */}
               <button 
                 onClick={toggleLanguage} 
-                className={`btn-geometric px-6 py-3 font-medium inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
+                className={` px-6 py-3 font-medium inline-flex items-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
               >
                 <i className="fas fa-globe mx-2"></i>
                 {language === 'ar' ? 'English' : 'العربية'}
@@ -141,7 +141,7 @@ const Header = () => {
               </button>
               <button 
                 onClick={() => handleLinkClick('/contact')}
-                className={`btn-geometric px-8 py-4 font-medium mt-6 text-center text-lg inline-flex items-center justify-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
+                className={` px-8 py-4 font-medium mt-6 text-center text-lg inline-flex items-center justify-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
               >
                 <i className="fas fa-paper-plane mx-2"></i> 
                 {t('contact')}
@@ -153,7 +153,7 @@ const Header = () => {
                   toggleLanguage();
                   closeMenu();
                 }} 
-                className={`btn-geometric px-8 py-4 font-medium mt-6 text-center text-lg inline-flex items-center justify-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
+                className={` px-8 py-4 font-medium mt-6 text-center text-lg inline-flex items-center justify-center ${language === 'ar' ? 'flex-row-reverse' : ''}`}
               >
                 <i className="fas fa-globe mx-2"></i>
                 {language === 'ar' ? 'English' : 'العربية'}
