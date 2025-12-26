@@ -7,7 +7,7 @@ const TeamSection = memo(() => {
 
   const teamMembers = [
     {
-      name: language === 'ar' ? 'محمود الربيعي' : 'Mahmoud Al-Rubai\'i',
+      name: language === 'ar' ? 'محمود الرباعي' : 'Mahmoud Al-Rubai\'i',
       title: t('mahmoudTitle'),
       description: t('mahmoudDesc'),
       image: 'images/Mahmoud Al-Rubai.webp'
@@ -37,7 +37,7 @@ const TeamSection = memo(() => {
       image: 'images/farah.webp'
     },
     {
-      name: language === 'ar' ? 'أيمن الشهري' : 'Ayman Al-Shahary',
+      name: language === 'ar' ? 'أيمن الشهاري' : 'Ayman Al-Shahary',
       title: t('Aymantitle'),
       description: t('Aymandesc'),
       image: 'images/Ayman Al-Shahary.webp'

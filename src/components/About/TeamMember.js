@@ -6,13 +6,14 @@ const TeamMember = memo(({ member, language }) => {
       <div className="bg-white border-0 [border-radius:0] [box-shadow:none] p-10 text-center" 
            style={{height: '100%', clipPath: 'polygon(0 0, 100% 0, 100% 92%, 94% 100%, 0 100%)'}}>
         
-        <div className="w-48 h-48 border-0 [border-radius:0] overflow-hidden border-0 mx-auto mb-8 team-img" 
+        <div className="w-48 h-48 border-0  [border-radius:0] overflow-hidden border-0 mx-auto mb-8 team-img" 
              style={{padding: '0', clipPath: 'polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%)'}}>
           <img 
             src={member.image} 
             alt={member.name} 
             style={{width: '100%', height: '100%', objectFit: 'cover', border: 'none'}}
             loading="lazy"
+            className=""
           />
         </div>
         
