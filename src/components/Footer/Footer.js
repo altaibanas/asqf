@@ -23,8 +23,12 @@ const Footer = () => {
           {/* معلومات الشركة */}
           <div>
             <div className={`flex ${language === 'ar' ? 'flex-row-reverse' : ''} items-center mb-8`}>
-              <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-secondary to-accent flex items-center justify-center shadow-2xl" style={{clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)'}}>
-                <i className="fas fa-drafting-compass text-white text-3xl"></i>
+              <div className="logo w-12 h-12 rounded-2xl bg-gradient-to-br from-secondary to-primary flex items-center justify-center shadow-2xl">
+                <img
+                  src='images/logo.webp'
+                  alt='شعار الشركة' 
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
               <div className={`${language === 'ar' ? 'mr-6 text-right' : 'ml-6'}`}>
                 <div className="text-2xl font-bold">{t('companyName')}</div>
@@ -80,11 +84,7 @@ const Footer = () => {
         <div className="pt-12 mt-12 border-t border-white/20 text-center">
           <p className="text-gray-300 text-lg">{t('copyright')}</p>
           {/* <p className="text-gray-400 mt-4 text-lg">{t('tagline')}</p> */}
-          <div className="flex justify-center space-x-6 mt-6 text-gray-400 text-sm">
-            <a href="#" className="hover:text-white transition-colors">{t('privacyPolicy')}</a>
-            <a href="#" className="hover:text-white transition-colors">{t('termsOfService')}</a>
-            <a href="#" className="hover:text-white transition-colors">{t('faq')}</a>
-          </div>
+        
         </div>
       </div>
     </footer>

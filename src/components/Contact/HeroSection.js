@@ -15,7 +15,7 @@ const HeroSection = memo(() => {
             </span>
           </div>
           
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white mb-6 md:mb-8 leading-tight geometric-entrance" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white pt-2  mb-6 md:mb-8 leading-tight geometric-entrance" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="200">
             <span className="block text-gradient-geometric">{t('contact')}</span>
             <span className="block my-2 md:my-4">
               <span className="text-gradient-geometric">{t('withUs')}</span>

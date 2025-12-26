@@ -87,8 +87,8 @@ const ContactInfoSection = memo(() => {
                 <div className="polygon-shape" style={{width: '60px', height: '60px', top: '-30px', right: '-30px'}}></div>
                 <div className="polygon-shape" style={{width: '40px', height: '40px', bottom: '-20px', left: '-20px', animationDelay: '-5s'}}></div>
                 
-                <div className="w-20 h-20 md:w-32 md:h-32 rounded-full bg-gradient-to-br from-secondary to-primary flex items-center justify-center mx-auto mb-4 md:mb-6 geometric-frame" style={{border: 'none', padding: '10px'}}>
-                  <i className="fas fa-map-marked-alt text-white text-2xl md:text-4xl"></i>
+                <div className="w-20 h-20 md:w-32 md:h-32   from-secondary to-primary flex items-center justify-center mx-auto mb-4 md:mb-6   " style={{border: 'none', padding: '10px'}}>
+                  <i className="fas fa-map-marked-alt text-black text-2xl md:text-4xl"></i>
                 </div>
                 <h3 className="text-xl md:text-3xl font-bold mb-2 md:mb-4 text-primary geometric-text">{t('mapLocation')}</h3>
                 <p className="text-gray-600 text-base md:text-xl max-w-2xl mx-auto">{t('fullAddress')}</p>
